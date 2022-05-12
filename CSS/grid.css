@@ -1,0 +1,64 @@
+/*Desktop Grid*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+.title {
+    grid-column: 6/8;
+    grid-row: 1;
+}
+
+.task {
+    grid-column: 4/10;
+    grid-row: 2;
+}
+
+.requirements {
+    grid-column: 4/10;
+    grid-row: 3;
+}
+
+.process {
+    grid-column: 4/10;
+    grid-row: 4;
+}
+
+.solution {
+    grid-column: 4/10;
+    grid-row: 5;
+}
+
+.workCard1 {
+    grid-column: 6/8;
+    grid-row: 2;
+}
+
+.workCard2 {
+    grid-column: 6/8;
+    grid-row: 3;
+}
+
+.workCard3 {
+    grid-column: 6/8;
+    grid-row: 4;
+}
+
+.workCard1.work{
+    grid-column: 4/10;
+    grid-row: 3;
+}
+
+.workCard2.work {
+    grid-column: 4/10;
+    grid-row: 4;
+}
+
+.workCard3.work {
+    grid-column: 4/10;
+    grid-row: 5;
+}
+
+
+/*Mobile Grid*/
