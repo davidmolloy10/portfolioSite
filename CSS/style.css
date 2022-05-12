@@ -107,19 +107,19 @@ html, body {
     color: #FFFFFF;
 }
 .workCard1 {
-    background: url("../Assets/smallBrief.jpg");
+    background: url("../Assets/Brief1Images/smallBrief.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .workCard2 {
-    background: url("../Assets/bigbrief.jpg");
+    background: url("../Assets/Brief2Images/bigbrief.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .workCard3 {
-    background: url("../Assets/portfolio.jpg");
+    background: url("../Assets/PortfolioBuild/portfolio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -142,13 +142,37 @@ html, body {
     border-radius: 30px;
 }
 
+
 .work h2, .work p {
     color: #000000;
     margin-right: 25px;
 }
 
+/*Casestudy styling*/
+.process img {
+    width: 650px;
+    height: auto;
+    border: 2px solid #000000;
+    margin: 5px;
+}
+
+.process img.vertical {
+    width: 220px;
+    height: auto;
+    border: 2px solid #000000;
+}
+
 .work a {
     text-decoration: none;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact {
+    height: 600px;
 }
 
 /*Footer Code*/
@@ -211,6 +235,13 @@ footer .icon {
         width: 200px;
         height: 125px;
         border-radius: 30px;
+    }
+
+    /*Casestudy styling*/
+    .process img {
+        width: 250px;
+        height: auto;
+        border: 2px solid #000000;
     }
 }
 
