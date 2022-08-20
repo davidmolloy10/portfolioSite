@@ -16,58 +16,56 @@ html, body {
 }
 
 .header h1 {
-    float: left;
     padding: 10px 50px;
     align-self: center;
 }
 
-.header img {
-    height: 75px;
-    width: 75px;
+.sidebar img {
+    height: 100px;
+    width: 100px;
     border-radius: 500px;
     border: 2px solid #000000;
-    align-self: center;
+    display: block;
+    margin: 0 auto 25px auto;
 }
 
 /*Nav Styling*/
-.header nav {
-    display: flex;
-    float: right;
-    padding: 10px 50px;
-    flex-wrap: wrap;
-}
-.header nav ul {
+.sidebar nav ul {
     margin: 0;
     padding: 0;
     margin: auto 0;
+    list-style-type: none;
 }
 
-.header li {
-    display: inline;
+.sidebar li {
+    text-align: center;
     padding: 0 15px;
+    margin: 10px 0;
 }
 
-.header a {
+.sidebar a, a:visited{
     text-decoration: none;
     color: #000000;
     padding: 5px 10px;
 }
 
-.header nav a:hover {
+.sidebar nav a:hover {
     text-decoration: none;
     border: 1px solid #003089;
     border-radius: 5px;
 }
 
-.header a.selected {
+.sidebar a.selected {
     color: #ffffff;
     background-color: #750000;
     border-radius: 5px;
 }
 
 /*Title Styling*/
-.title {
+.sidebar h1 {
+    padding: 10px 25px;
     text-align: center;
+    font-size: 24px;
 }
 
 .task p, .requirements p, .process p, .solution p {
@@ -75,18 +73,25 @@ html, body {
 }
 
 /*Work Card Styling*/
+
+.workCards {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .workCard1, .workCard2, .workCard3 {
-    width: 600px;
+    width: 450px;
     height: 375px;
     margin: 25px;
-    border-radius: 30px;
-    overflow: hidden;
+    border-radius: 10px;
     box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.58);
 }
 .workCard1 div, .workCard2 div, .workCard3 div {
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
     height: 351px;
     max-height: 100%;

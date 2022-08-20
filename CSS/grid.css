@@ -5,9 +5,20 @@
     grid-template-rows: auto;
 }
 
-.title {
-    grid-column: 5/9;
-    grid-row: 1;
+.sidebar {
+    grid-column: 1/4;
+    grid-row: 1/8;
+    background-color:#C4C4C4;
+}
+
+.workCards {
+    grid-column: 4/13;
+    grid-row: 1/6;
+}
+
+.footer {
+    grid-column: 4/13;
+    grid-row: 7;
 }
 
 .task {
@@ -33,21 +44,6 @@
 .solution {
     grid-column: 4/10;
     grid-row: 5;
-}
-
-.workCard1 {
-    grid-column: 6/8;
-    grid-row: 2;
-}
-
-.workCard2 {
-    grid-column: 6/8;
-    grid-row: 3;
-}
-
-.workCard3 {
-    grid-column: 6/8;
-    grid-row: 4;
 }
 
 .workCard1.work{
