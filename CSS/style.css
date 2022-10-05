@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #373737;
+    font-family: 'Roboto Slab', serif;  
 }
 
 /*Header Styling*/
@@ -9,20 +10,26 @@ html, body {
     height: 100px;
     width: 100%;
     background-color: #FF8000;
-    padding: 0 50px;
+    display: flex;
+    align-items: center;
 }
 
 .header h1 {
     font-size: 32px;
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    width: auto;
-    display: flex;
+    width: 50%;
+    padding-left: 50px;
 }
 
 .header nav {
-    display: flex;
-    float: right;
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.header nav ul {
+    padding: 0;
+    margin: 0;
 }
 
 .header nav ul li {
@@ -32,4 +39,29 @@ html, body {
 .header nav ul li a {
     text-decoration: none;
     color: #000000;
+    font-size: 22px;
+    padding: 5px 25px;
+    margin: 0 25px;
+}
+
+.header a:hover {
+    background-color: #59AFFF;
+    border-radius: 5px;
+}
+
+/*Footer Styling*/
+.footer {
+    background-color: #FF8000;
+    display: flex;
+}
+
+.icons {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.footer p {
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
 }
