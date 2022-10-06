@@ -12,6 +12,7 @@ html, body {
     background-color: #FF8000;
     display: flex;
     align-items: center;
+    margin-bottom: 75px;
 }
 
 .header h1 {
@@ -49,15 +50,88 @@ html, body {
     border-radius: 5px;
 }
 
+/*Main Content Styling*/
+
+.grid-container {
+    margin: 0 50px;
+}
+
+.page-title{
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.me-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 120px;
+    justify-self: center;
+    align-self: center;
+}
+
+/*Work card styling*/
+.work-card {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+    background-color: #AED3FF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.work-card a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(55, 55, 55, 0.7);
+    width: 450px;
+    height: 450px;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.work-card:hover .overlay {
+    display: flex;
+    border: 2px solid #FF8000;
+    border-radius: 10px;
+}
+
+.card1 img {
+    height: 250px;
+}
+
+.card2 img {
+    height: 300px;
+}
+
 /*Footer Styling*/
 .footer {
     background-color: #FF8000;
     display: flex;
+    margin-top: 50px;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
 }
 
 .icons {
     width: 50%;
     padding-left: 50px;
+}
+
+.icons img {
+    margin: 10px;
 }
 
 .footer p {
