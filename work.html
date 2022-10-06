@@ -1,59 +1,55 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/grid.css">
-        <script type="text/javascript" src="Javascript/hamburger.js"></script>
-        <title>David Molloy - My Work</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1>David Molloy</h1>
-            <img src="Assets/me.jpeg" alt="An Image of Me (David Molloy)">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="selected" href="work.html">My Work</a></li>
-                    <li><a download href="Assets/CV.pdf">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <h1 class="title">My Work</h1>
-            <section class="workCard1 work">
-                <a href="build1.html">
-                    <img src="Assets/Brief1Images/smallBrief.jpg" alt="">
-                    <h2>Inanimate Object Page</h2>
-                    <p>Designing and Developing a Single Page Website to Promote a Product</p>
-                </a>
-            </section>
-            <section class="workCard2 work">
-                <a href="build2.html">
-                    <img src="Assets/Brief2Images/bigbrief.jpg" alt="">
-                    <h2>Bespoke Messageing System</h2>
-                    <p>Designing a Messaging System to Aid Applicants</p>
-                </a>
-            </section>
-            <section class="workCard3 work">
-                <a href="build3.html">
-                    <img src="Assets/PortfolioBuild/portfolio.jpg" alt="">
-                    <h2>Portfolio Site</h2>
-                    <p>Designing and Developing a Portfolio Website to showcase work done</p>
-                </a>
-            </section>
-        </main>
-        <footer>
-            <p>&copy;David Molloy</p>
-            <section class="icon">
-                <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt=""></a>
-            </section>
-        </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg"/>
+    <title>David Molloy</title>
+</head>
+<body>
+    <!--Header Section with the 3 elements-->
+    <header class="header">
+        <h1>David Molloy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main body content showing lastest 3 pieces of work-->
+    <main class="grid-container">
+        <article class="page-header">
+            <h1>My Work</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas augue libero, congue posuere ultricies ac, vestibulum at dui. Sed id nisl sodales, luctus sapien et, ultricies justo. Duis laoreet, erat sit amet porttitor maximus, dui mi feugiat metus, vel fermentum erat ex at turpis. Suspendisse non rhoncus est, ac tincidunt.</p>
+        </article>
+        <article class="work-cards">
+            <a class="work-card-expanded expanded1" href="">
+                    <img class="img1" src="Assets/Brief1Images/phone1-screenshot.png" alt="">
+                    <img class="img2" src="Assets/Brief1Images/phone2-screenshot.png" alt="">
+                    <h2>Inanimate Object Build</h2>
+                    <p>This project focused on the design & development of a single page site for a static product in order to promote it.</p>
+            </a>
+            <a class="work-card-expanded expanded2" href="">
+                <img class="bespokeImg" src="Assets/Brief2Images/desktopMessagingApp.png" alt="">
+                <h2>Bespoke Messaging App Design</h2>
+                <p>This project focused on designing </p>
+        </a>
+        </article>
+    </main>
+    <!--Footer containing links to 2 social media sites and a copyright notice-->
+    <footer class="footer">
+        <div class="icons">
+            <a href=""><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a>
+            <a href=""><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a>   
+        </div>
+        <p>&copy David Molloy</p>
+    </footer>
 </body>
 </html>

@@ -29,3 +29,43 @@
     grid-row: 2;
 }
 
+/*Projects Page Grid*/
+.page-header {
+    grid-column: span 12;
+    grid-row: 1;
+}
+
+.work-cards {
+    grid-column: 2/12;
+    grid-row: 2;
+}
+
+.work-card-expanded {
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 title title"
+        "img1 img2 description description"
+        "img1 img2 description description";
+}
+
+.work-card-expanded .img1 {
+    grid-area: img1;
+    justify-self: end;
+}
+
+.work-card-expanded .img2 {
+    grid-area: img2;
+}
+
+.work-card-expanded .bespokeImg {
+    grid-area: img1;
+    grid-area: img2;
+}
+
+.work-card-expanded h2 {
+    grid-area: title;
+}
+
+.work-card-expanded p {
+    grid-area: description;
+}
