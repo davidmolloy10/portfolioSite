@@ -178,3 +178,34 @@ html, body {
 .expanded2 img {
     height: 250px;
 }
+
+/*Contact Page Styling*/
+.contact-card {
+    justify-self: center;
+    background-color: #AED3FF;
+    width: 750px;
+    text-align: center;
+    border-radius: 15px;
+    border: solid #000000 2px;
+}
+
+.contact-card ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-card ul li {
+    display: inline;
+}
+
+.contact-card ul img {
+    height: 100px;
+    width: 100px;
+}
+
+.contact-card h1 {
+    font-weight: 400;
+    max-width: 500px;
+    margin: 50px auto;
+}

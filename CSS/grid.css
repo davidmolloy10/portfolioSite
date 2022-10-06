@@ -69,3 +69,9 @@
 .work-card-expanded p {
     grid-area: description;
 }
+
+/*Contact Page Grid*/
+.contact-card {
+    grid-column: 1/13;
+    grid-row: 1/4;
+}
