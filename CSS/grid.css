@@ -75,3 +75,45 @@
     grid-column: 1/13;
     grid-row: 1/4;
 }
+
+/*Brief Pages Grid*/
+
+.project-title {
+    grid-column: 1/13;
+    grid-row: 1;
+}
+
+.task {
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+.requirements {
+    grid-column: 6/13;
+    grid-row: 2;
+}
+
+.process {
+    grid-column: 1/13;
+    grid-row: 3;
+}
+
+.wireframes {
+    grid-column: 1/13;
+    grid-row: 4;
+}
+
+.photography {
+    grid-column: 1/13;
+    grid-row: 5;
+}
+
+.mockups {
+    grid-column: 1/13;
+    grid-row: 6;
+}
+
+.solution {
+    grid-column: 1/13;
+    grid-row: 7;
+}
