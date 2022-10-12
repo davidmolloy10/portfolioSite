@@ -166,7 +166,7 @@ html, body {
     border-radius: 10px;
 }
 
-.work-card-expanded h2, p {
+.work-card-expanded h2 p {
     width: 600px;
     max-width: 600px;
 }
@@ -208,4 +208,70 @@ html, body {
     font-weight: 400;
     max-width: 500px;
     margin: 50px auto;
+}
+
+/*Brief Page Styling*/
+h1, h2, p, li {
+    color: #FFFFFF;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.task, .requirements {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.task p, .requirements p {
+    margin: 0 auto;
+}
+
+.requirements ul {
+    list-style: none;
+}
+
+
+.row3, .row4, .row5, .row6, .row7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.text-left {
+    float: right;
+    max-width: 50%;
+}
+
+.text-right {
+    float: right;
+    max-width: 50%;
+}
+
+.img-right {
+    float: right;   
+}
+
+.img-left {
+    float: left;   
+}
+
+
+.photography img {
+    height: 580px;
+    width: 430px;
+    border: 2px solid #000000;
+}
+
+.mockups img {
+    height: 750px;
+    width: 340px;
+}
+
+.solution {
+    display: inline;
+    margin-top: 50px;
+    text-align: center;
 }

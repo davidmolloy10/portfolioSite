@@ -93,27 +93,27 @@
     grid-row: 2;
 }
 
-.process {
+.row3 {
     grid-column: 1/13;
     grid-row: 3;
 }
 
-.wireframes {
+.row4 {
     grid-column: 1/13;
     grid-row: 4;
 }
 
-.photography {
+.row5 {
     grid-column: 1/13;
     grid-row: 5;
 }
 
-.mockups {
+.row6 {
     grid-column: 1/13;
     grid-row: 6;
 }
 
-.solution {
+.row7 {
     grid-column: 1/13;
     grid-row: 7;
 }
