@@ -57,9 +57,8 @@
     grid-area: img2;
 }
 
-.work-card-expanded .bespokeImg {
+.bespokeImg {
     grid-area: img1;
-    grid-area: img2;
 }
 
 .work-card-expanded h2 {
@@ -116,4 +115,118 @@
 .row7 {
     grid-column: 1/13;
     grid-row: 7;
+}
+
+/*Mobile Media Query (Active only on 650px or below screen widths*/
+@media (max-width: 1350px) {
+    /*Mobile Grid*/
+    
+    /*General Grid*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .page-title {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+
+    .me-img {
+        grid-column: span 1;
+        grid-row: 1;
+    }
+
+    .card1 {
+        grid-column: span 1;
+        grid-row: 3;
+    }
+
+    .card2 {
+        grid-column: span 1;
+        grid-row: 4;
+    }
+
+    .card3 {
+        grid-column: span 1;
+        grid-row: 5;
+    }
+
+    /*Projects Page*/
+    .page-header {
+        grid-column: span 1;
+        grid-row: 1;
+    }
+
+    .work-cards {
+        grid-column: span 1;
+    }
+
+    .work-card-expanded {
+        display: grid;
+        grid-template-areas: 
+            "img1 img2"
+            "img1 img2"
+            "title title"
+            "description description";
+    }
+
+    /*Contact Page Grid*/
+    .contact-card {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .contact-card h1 {
+        margin: 45px;
+        font-size: 22px;
+    }
+
+    .contact-card ul img {
+        height: 60px;
+        width: 60px;
+    }
+
+    /*Brief Pages Grid*/
+
+.project-title {
+    grid-column: span 1;
+    grid-row: 1;
+}
+
+.task {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+.requirements {
+    grid-column: span 1;
+    grid-row: 3;
+}
+
+.row3 {
+    grid-column: span 1;
+    grid-row: 4;
+}
+
+.row4 {
+    grid-column: span 1;
+    grid-row: 5;
+}
+
+.row5 {
+    grid-column: span 1;
+    grid-row: 6;
+}
+
+.row6 {
+    grid-column: span 1;
+    grid-row: 7;
+}
+
+.row7 {
+    grid-column: span 1;
+    grid-row: 8;
+}
 }

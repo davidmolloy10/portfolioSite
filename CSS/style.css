@@ -5,6 +5,19 @@ html, body {
     font-family: 'Roboto Slab', serif;  
 }
 
+a:link { 
+    text-decoration: none; 
+}
+a:visited { 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+a:active { 
+    text-decoration: none;
+}
+
 /*Header Styling*/
 .header {
     height: 100px;
@@ -22,23 +35,23 @@ html, body {
     padding-left: 50px;
 }
 
-.header nav {
+.nav-bar {
     width: 50%;
     text-align: right;
     padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.header nav ul {
+.nav-menu {
     padding: 0;
     margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
 }
 
-.header nav ul li {
-    display: inline;
-}
-
-.header nav ul li a {
-    text-decoration: none;
+.nav-menu li a {
     color: #000000;
     font-size: 22px;
     padding: 5px 25px;
@@ -48,6 +61,21 @@ html, body {
 .header a:hover {
     background-color: #59AFFF;
     border-radius: 5px;
+} 
+
+/*Hamburger Styling*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
 }
 
 /*Main Content Styling*/
@@ -75,7 +103,7 @@ html, body {
     display: flex;
     width: 450px;
     height: 450px;
-    margin: 10px;
+    margin: 10px auto;
     background-color: #AED3FF;
     border: 2px solid #000000;
     border-radius: 10px;
@@ -147,13 +175,13 @@ html, body {
 }
 
 .page-header p {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .work-cards {
     margin-top: 20px;
-    justify-self: center;
+    margin: 20px auto;
 }
 
 .work-card-expanded {
@@ -166,9 +194,10 @@ html, body {
     border-radius: 10px;
 }
 
-.work-card-expanded h2 p {
-    width: 600px;
-    max-width: 600px;
+.work-card-expanded h2, .work-card-expanded p {
+    color: #000000;
+    text-decoration: none;
+    margin: 5px;
 }
 
 .expanded1 img {
@@ -230,6 +259,7 @@ h1, h2, p, li {
 
 .requirements ul {
     list-style: none;
+    padding: 0;
 }
 
 
@@ -274,4 +304,148 @@ h1, h2, p, li {
     display: inline;
     margin-top: 50px;
     text-align: center;
+}
+
+/*Mobile Media Query (Active only on 650px or below screen widths*/
+@media (max-width: 1350px) {
+/*Mobile Styling*/
+    .grid-container {
+        margin: 0 15px;
+        margin-top: 110px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+    }
+
+    .header h1 {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .me-img {
+        height: 150px;
+        width: 150px 
+    }
+
+    /*Nav*/
+    .hamburger {
+        display: block;
+    }
+
+    /*Animation for making the hamburger menu an X when active*/
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FF8000;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu li {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .body.stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /*Work Cards*/
+    .work-card {
+        height: 275px;
+        width: 275px;
+    }
+
+    .overlay {
+        height: 275px;
+        width: 275px;
+    }
+
+    .card1 img {
+        height: 200px;
+    }
+
+    .card2 img {
+        height: 190px;
+    }
+
+    .work-card-expanded {
+        width: 275px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .work-card-expanded h2 p {
+        margin: 5px 5px;
+    }
+
+    .expanded1 img {
+        height: 200px;
+    }
+
+    .expanded2 img {
+        height: 175px;
+    }
+
+    /*Footer Styling*/
+    .icons {
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .icons img {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+
+    /*Contact Card*/
+    .contact-card {
+        width: 300px;
+    }
+
+    .row3, .row4, .row5, .row6, .row7 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .text-left, .text-right, .img-left, .img-right {
+        float: none;
+        max-width: 100%;
+    }
+
+    .process img, .wireframes img {
+        width: 200px;
+    }
+
+    .photography img {
+        width: 175px;
+        height: 230px;
+    }
+
+    .mockups img {
+        width: 180px;
+        height: 390px;
+    }
 }
