@@ -18,6 +18,10 @@ a:active {
     text-decoration: none;
 }
 
+h1, h2, h3 {
+    color: #FFFFFF;
+    font-weight: 500;
+}
 
 /*Header Styling*/
 .header {
@@ -264,7 +268,7 @@ h1, h2, p, li {
 }
 
 
-.row3, .row4, .row5, .row6, .row7 {
+.row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,22 +293,59 @@ h1, h2, p, li {
     padding: 0 20px;
 }
 
-.process img, .wireframes img {
+.brief-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+}
+
+.research {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.process img, .define img, .wireframes img, .userTesting img, .photography img, .mockups img, .siteTesting img {
     border: 2px solid #000000;
     box-shadow: 7px 8px 15px 1px rgba(0,0,0,0.55);
+    margin: 10px;
 }
 
-
-.photography img {
-    height: 580px;
-    width: 430px;
-    border: 2px solid #000000;
+.candleMindmap {
+    height: 400px;
 }
 
-.mockups img {
-    height: 750px;
-    width: 340px;
-    border: 2px solid #000000;
+.candleWireframe {
+    height: 350px;
+}
+
+.personaimg {
+    height: 475px;
+}
+
+.candlePhoto {
+    height: 500px;
+}
+
+.candleUserTestResults {
+    width: 900px;
+}
+
+.candleMockup {
+    height: 600px;
+}
+
+.candleStyleGuide {
+    width: 550px;
+}
+
+.codeSnippet {
+    width: 650px;
 }
 
 .solution {
@@ -313,9 +354,13 @@ h1, h2, p, li {
     text-align: center;
 }
 
-/*Mobile Media Query (Active only on 650px or below screen widths*/
+.solutionImg {
+    height: 450px;
+}
+
+/*Mobile/Tablet Media Query (Active only on 650px or below screen widths*/
 @media (max-width: 1350px) {
-/*Mobile Styling*/
+/*Mobile/Tablet Styling*/
     .grid-container {
         margin: 0 15px;
         margin-top: 110px;
@@ -430,11 +475,13 @@ h1, h2, p, li {
     /*Contact Card*/
     .contact-card {
         width: 300px;
+        margin-bottom: 100px;
     }
 
-    .row3, .row4, .row5, .row6, .row7 {
+    .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12 {
         display: inline-block;
         text-align: center;
+        max-width: 100vw;
     }
 
     .text-left, .text-right, .img-left, .img-right {
@@ -442,17 +489,65 @@ h1, h2, p, li {
         max-width: 100%;
     }
 
-    .process img, .wireframes img {
-        width: 200px;
+    .brief-img {
+        flex-direction: column;
     }
 
-    .photography img {
-        width: 175px;
-        height: 230px;
+    .personaimg {
+        height: 355px;
     }
 
-    .mockups img {
-        width: 180px;
-        height: 390px;
+    .candleWireframe {
+        height: 400px;
     }
+
+    .candleMindmap {
+        width: 300px;
+        height: auto;
+    }
+    
+    .candleUserTestResults {
+        width: 450px;
+    }
+
+    .candlePhoto {
+        height: 350px;
+    }
+    
+    .candleMockup {
+        height: 500px;
+    }
+
+    .candleStyleGuide {
+        width: 500px;
+    }
+
+    .codeSnippet {
+        width: 450px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .candleWireframe {
+        height: auto;
+        width: 300px;
+    }
+
+    .candleUserTestResults {
+        width: 300px;
+    }
+
+    .candleStyleGuide {
+        width: 350px;
+    }
+
+    .personaimg {
+        height: 225px;
+    }
+
+    .codeSnippet {
+        width: 400px;
+    }
+    
 }
