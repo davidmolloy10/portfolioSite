@@ -513,6 +513,10 @@ figcaption {
         margin-bottom: 100px;
     }
 
+    .contact-card h1 {
+        color: #000000;
+    }
+
     .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12 {
         display: inline-block;
         text-align: center;
