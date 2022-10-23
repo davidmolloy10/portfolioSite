@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
+    <title>David Molloy | Bespoke Messaging Application</title>
+</head>
+<body class="body">
+    <!--Header Section with the 3 elements-->
+    <header class="header">
+        <h1>David Molloy</h1>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="Javascript/hamburger.js"></script>
+    <!--Main body content showing lastest 3 pieces of work-->
+    <main class="grid-container">
+        <h1 class="project-title">Bespoke Messaging App Design</h1>
+        <article class="task">
+            <h2>The Task</h2>
+            <p>The task for this project was to design a bespoke messaging system that allowed users to contact customer support and view FAQs, it was also important that the design was completed in such a way that allowed for it to be easily changed to fit different branding as the system this would be attached to is used across multiple companies.</p>
+        </article>
+        <article class="requirements">
+            <h2>The Requirements</h2>
+            <p>The requirements of this project were straightforward, below is a list of them.</p>
+            <ul>
+                <li>Participants should be able to send and receive messages to and from customer service at any stage in the application process</li>
+                <li>If a customer service agent starts a chat the participant needs to be notified</li>
+                <li>Messages need a 250-character limit</li>
+                <li>Participants shouldn’t have to leave their current page to send a message</li>
+                <li>Message history should be kept for participants to view if they change pages mid-conversation</li>
+                <li>Easily interchangeable colour scheme</li>
+                <li>Before a participant asks a question to a customer service agent they should be shown a set of FAQ’s</li>
+            </ul>
+        </article>
+        <article class="row3 process">
+            <div class="text-left">
+                <h2>The Process</h2>
+                <br>
+                <p>Due to the stricter operating bounds of this project a slightly different approach was taken to develop a solution, because of the list of requirements provided by the client the first step was to analyse these requirements and define some key design choices and features that would suit a system like this, from there I began to wireframe out some ideas using these features to create quick concept layouts and then move onto high-fidelity mock-ups which were prototyped out with multiple colour schemes and tested with users to see if the solution worked.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgProcess" src="Assets/Brief2Images/process.png" alt="A diagram showing the 4 stages in the project process">
+                    <figcaption>The process steps followed during this project</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row4 define">
+            <div class="text-right">
+                <h2>Define</h2>
+                <p>The define stage allowed me to quickly ideate some thoughts for key features and design choices that would help meet the requirements set out, one of these included how was I going to make the messaging feature accessibile across any point in the site, intially I thought about an extra link in the navigation pane that would open a new window, but decided this wouldn't work on mobile to well, and that is how the icon/widget idea was decided upon. This also helps with user familiarity as a "chat bubble" is widely recognised.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgWireframe" src="Assets/Brief2Images/messageSystemWireframe.jpeg" alt="A scan of a page showing a first basic wireframe for the project, the imporant feature here is the new messages link in the navigation pane">
+                    <figcaption>Images showing the first and second iterations of the wireframes created for the messaging widget</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row5 wireframes">
+            <div class="text-left">
+                <h2>Wireframing</h2>
+                <p>As there was already a layout of the current system provided by the client the first stage of wireframing was to sketch this out, from there following on with the widget-type system I wanted to implement, I produced some wireframes for how this widget would look when it was in use and the different stages that a user would come across during normal usage. Using this widget style of design, there were going to be three main screens that the user would see, the FAQ and new message section, the current/past messages page, and the inner message page for when you are talking with support.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgWireframe" src="Assets/Brief2Images/widgetWireframe1st.jpg" alt="A scan of a page showing a first version wireframe, showcasing the three main screens a user would see">
+                    <img class="msgWireframe" src="Assets/Brief2Images/widgetWireframe2nd.jpg" alt="A scan of a page showing a second version wireframe, showcasing the three main screens a user would see">
+                    <figcaption>Images showing the first and second iterations of the wireframes created for the messaging widget</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row6 mockups">
+            <div class="text-right">
+                <h2>High Fidelity Mock-ups</h2>
+                <p>Another key requirement was to have the website supported across devices and having already produced wireframes in a mobile format for initial research, the design phase could move straight into high-fidelity mockup making, this started with producing a style guide to follow, showcasing key colours & fonts, then following into mocking up the mobile versions and expanding them into the desktop versions. The current website that sells this candle doesn’t have much in terms of feel or brand so near complete freedom was taken with this.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgDesktopMock" src="Assets/Brief2Images/HomeMessageWidgetOpen.png" alt="Screenshot of the final desktop mockup, showing the new messages widget open, on the default page with the FAQ list visible">
+                    <figcaption>Final Desktop High-Fidelity Mock-up</figcaption>
+                </figure>
+                <figure>
+                    <img class="msgMobileMock" src="Assets/Brief2Images/Mobile-AmyMessage.png" alt="Screenshot of the messaging system open on a mobile device size, showcasing what it looks like inside a message with somebody">
+                    <figcaption>Final Mobile view of the new messaging system</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row7 testing">
+            <div class="text-left">
+                <h2>User Testing</h2>
+                <p>For testing, I ran some small scale think aloud, task-based testing with 7 users, where the user was asked to complete some predetermined tasks and talk the way through their flow and thoughts as they were doing it, for fairness, each user was given the same tasks and information before they began. This testing was able to reveal that what I had designed, was good and all users found it usable. Every user that carried out tasks, was able to complete them, and not everyone used a predicted flow, however the main pain point encountered by users was struggling to access the messages section of the design, so new iterations of this project could look into more research for how users would like this be designed better in the future.</p>
+                <h3>Below is a sample of the questions asked during the testing;</h3>
+                <ul>
+                    <li>Open the chat app/section</li>
+                    <li>View the answer to the 5th FAQ question</li>
+                    <li>Access the unread message from "Diane Morrison"</li>
+                    <li>Find where you would start a new message</li>
+                </ul>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="mobileMsgs" src="Assets/Brief2Images/mobileMsgPge.png" alt="A phone mockup showing a previous messages page, with 5 message blocks, one of which is unread from Diane Morrison">
+                    <figcaption>The messages page that users would've seen during the testing</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row8 solution">
+            <h2>The Solution</h2>
+            <p>Ultimately I was able to design a messaging system that works for all, the requirements set out were achieved, such as a system that can suit multiple colour schemes and being able to access the system from any point in the site or during the application process. User testing also backs this up, with user testing showing that the design works for them, being able to accomplish the most common tasks that any user would need to do. Below are three mockups to give a representation of how the final solution will look and feel across multiple device sizes.</p>
+            <div class="brief-img">
+                <img class="solutionImg1" src="Assets/Brief2Images/blueIndex.png" alt="A phone model showing the screenshot of the mockup on it">
+                <img class="solutionImg2" src="Assets/Brief2Images/tabletWidget.png" alt="A phone model showing the screenshot of the mockup on it">
+                <img class="solutionImg1" src="Assets/Brief2Images/greenFAQ.png" alt="A phone model showing the screenshot of the mockup on it">
+            </div>
+        </article>
+    </main>
+    <!--Footer containing links to 2 social media sites and a copyright notice-->
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a>
+            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a>   
+        </div>
+        <p>&copy;David Molloy</p>
+    </footer>
+</body>
+</html>

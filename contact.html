@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,38 +9,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/grid.css">
-    <script type="text/javascript" src="Javascript/hamburger.js"></script>
-    <title>David Molloy</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
+    <title>David Molloy | Contact Me</title>
 </head>
-<body>
+<body class="body">
+    <!--Header Section with the 3 elements-->
     <header class="header">
         <h1>David Molloy</h1>
-        <img src="Assets/me.jpeg" alt="An Image of Me (David Molloy)">
-        <nav>
-            <ul>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a download href="Assets/CV.pdf">Resume</a></li>
-                <li><a class="selected" href="contact.html">Contact Me</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-    <main class="container">
-        <h1 class="title">If you have any questions please feel free to contact me on any of the methods listed below, I will endevour to reply as soon as possible.</h1>
-        <!--Code for the contact section, text wrapped in a tags execept for the email-->
-        <section class="contact">
-            <a href="https://twitter.com/davidmolloy10_"><h2>Twitter ></h2></a>
-            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><h2>LinkedIn ></h2></a>
-            <h2>Email - davidmolloy6000@gmail.com</h2>
-        </section>
-        
+    <script src="Javascript/hamburger.js"></script>
+    <!--Main body content showing lastest 3 pieces of work-->
+    <main class="grid-container">
+      <div class="contact-card">
+        <img class="me-img" src="Assets/memeojiFigure.PNG" alt="">
+        <h1>If you have any questions please feel free to contact me on any of the methods listed below, I will endeavour to reply as soon as possible.</h1>
+        <ul class="contact-list">
+            <li><a href="mailto:davidmolloy6000@gmail.com?subject=Contact%20from%20your%20portfolio%20site"><img src="Assets/email.png" alt="Email Icon which opens an email dialogue to send an email"></a></li>
+            <li><a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a></li>
+            <li><a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a></li>
+        </ul>
+      </div>
     </main>
-    <footer>
+    <!--Footer containing links to 2 social media sites and a copyright notice-->
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a>
+            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a>   
+        </div>
         <p>&copy;David Molloy</p>
-        <section class="icon">
-            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt=""></a>
-        </section>
     </footer>
 </body>
 </html>

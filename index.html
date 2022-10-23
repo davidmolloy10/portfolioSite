@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,59 +9,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/grid.css">
-    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg"/>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
     <title>David Molloy</title>
 </head>
-<body>
+<body class="body">
     <!--Header Section with the 3 elements-->
     <header class="header">
         <h1>David Molloy</h1>
-        <img src="Assets/me.jpeg" alt="An Image of Me (David Molloy)">
-        <nav>
-            <ul>
-                <li><a class="selected" href="index.html">Home</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a download href="Assets/CV.pdf">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
+    <script src="Javascript/hamburger.js"></script>
     <!--Main body content showing lastest 3 pieces of work-->
-    <main class="container">
-        <h1 class="title">Hi, I’m David, I’m a recent graduate from Edge Hill University with a passion for UX Design</h1>
-        <!--Each work card has its own background img applied in css and links directly to the page showing that work in more detail-->
-        <section class="workCard1">
-            <a href="build1.html">
-                <div>
-                    <h2>Inanimate Object Page</h2>
-                    <p>Click to find out more!</p>
+    <main class="grid-container">
+        <h1 class="page-title">Hi, I’m David, a web design & development graduate pursuing a career in UX/UI design to improve the user experience for all. Please take a look at the work, here on my site to learn a bit more about how I approach a UX project.</h1>
+        <img class="me-img" src="Assets/memeojiFigure.PNG" alt="A memoji figure based on my appearance">
+        
+        <div class="work-card card1">
+            <a href="brief1.html">
+                    <img src="Assets/Brief1Images/phone1-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
+                    <img src="Assets/Brief1Images/phone2-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
+                    <div class="overlay">
+                        <p>Click here to find out more!</p>
+                    </div>
+            </a>
+        </div>
+        <div class="work-card card2">
+            <a href="brief2.html">
+                <img src="Assets/Brief2Images/desktopMockup.png" alt="A tablet mockup showing a screenshot of the bespoke messaging app design">
+                <div class="overlay">
+                    <p>Click here to find out more!</p>
                 </div>
             </a>
-        </section>
-        <section class="workCard2">
-            <a href="build2.html">
-                <div>
-                    <h2>Bespoke Message System</h2>
-                    <p>Click to find out more!</p>
-                </div>
-            </a>
-        </section>
-        <section class="workCard3">
-            <a href="build3.html">
-                <div>
-                    <h2>Portfolio Website</h2>
-                    <p>Click to find out more!</p>
-                </div>
-            </a>
-        </section>
+        </div>
     </main>
     <!--Footer containing links to 2 social media sites and a copyright notice-->
-    <footer>
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a>
+            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a>   
+        </div>
         <p>&copy;David Molloy</p>
-        <section class="icon">
-            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt=""></a>
-        </section>
     </footer>
 </body>
 </html>

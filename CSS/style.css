@@ -1,262 +1,628 @@
-/*Generic Styling*/
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab', serif;
-    background-color: #E2E2E2;
+    background-color: #373737;
+    font-family: 'Roboto Slab', serif;  
+}
+
+a:link { 
+    text-decoration: none; 
+}
+a:visited { 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+a:active { 
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
 }
 
 /*Header Styling*/
 .header {
-    width: 100%;
     height: 100px;
+    width: 100%;
+    background-color: #FF8000;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    margin-bottom: 75px;
 }
 
 .header h1 {
-    float: left;
-    padding: 10px 50px;
-    align-self: center;
-}
-
-.header img {
-    height: 75px;
-    width: 75px;
-    border-radius: 500px;
-    border: 2px solid #000000;
-    align-self: center;
-}
-
-/*Nav Styling*/
-.header nav {
-    display: flex;
-    float: right;
-    padding: 10px 50px;
-    flex-wrap: wrap;
-}
-.header nav ul {
+    font-size: 32px;
     margin: 0;
-    padding: 0;
-    margin: auto 0;
-}
-
-.header li {
-    display: inline;
-    padding: 0 15px;
-}
-
-.header a {
-    text-decoration: none;
+    width: 50%;
+    padding-left: 50px;
     color: #000000;
-    padding: 5px 10px;
 }
 
-.header nav a:hover {
-    text-decoration: none;
-    border: 1px solid #003089;
+.nav-bar {
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-menu li a {
+    color: #000000;
+    font-size: 22px;
+    padding: 5px 25px;
+    margin: 0 25px;
+}
+
+.header a:hover {
+    background-color: #59AFFF;
     border-radius: 5px;
+} 
+
+/*Hamburger Styling*/
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-.header a.selected {
-    color: #ffffff;
-    background-color: #750000;
-    border-radius: 5px;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
 }
 
-/*Title Styling*/
-.title {
+/*Main Content Styling*/
+
+.grid-container {
+    margin: 0 50px;
+}
+
+.page-title{
+    color: #FFFFFF;
+    font-weight: 400;
     text-align: center;
 }
 
-.task p, .requirements p, .process p, .solution p {
-    color: #000000;
+.me-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 120px;
+    justify-self: center;
+    align-self: center;
 }
 
-/*Work Card Styling*/
-.workCard1, .workCard2, .workCard3 {
-    width: 600px;
-    height: 375px;
-    margin: 25px;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.58);
-}
-.workCard1 div, .workCard2 div, .workCard3 div {
+/*Work card styling*/
+.work-card, .expanded{
     display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    padding: 10px;
-    height: 351px;
-    max-height: 100%;
-    display: none;
-    background-color: #003089ce;
+    width: 450px;
+    height: 450px;
+    margin: 10px auto;
+    background-color: #AED3FF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.work-card a {
+    display: flex;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.workCard1:hover div, .workCard2:hover div, .workCard3:hover div {
-    display: flex;
-    border: 2px solid rgb(250, 0, 0);
+.overlay {
+    position: absolute;
+    background-color: rgba(55, 55, 55, 0.7);
+    width: 450px;
+    height: 450px;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 22px;
 }
 
-.workCard1 h2, p, .workCard2 h2, p, .workCard3 h2, p {
-    text-decoration: none;
+.work-card:hover .overlay {
+    display: flex;
+    border: 2px solid #FF8000;
+    border-radius: 10px;
+}
+
+.card1 img {
+    height: 250px;
+}
+
+.card2 img {
+    height: 300px;
+}
+
+/*Footer Styling*/
+.footer {
+    background-color: #FF8000;
+    display: flex;
+    margin-top: 50px;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.icons {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.icons img {
+    margin: 10px;
+}
+
+.footer p {
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+    color: #000000;
+    font-size: 22px;
+}
+
+/*Projects Page Specific Styling*/
+.page-header {
+    text-align: center;
     color: #FFFFFF;
 }
-.workCard1 {
-    background: url("../Assets/Brief1Images/smallBrief.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.page-header p {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.workCard2 {
-    background: url("../Assets/Brief2Images/bigbrief.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.work-cards {
+    margin-top: 20px;
+    margin: 20px auto;
 }
 
-.workCard3 {
-    background: url("../Assets/PortfolioBuild/portfolio.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.work-card-expanded {
+    width: 1200px;
+    height: 550px;
+    background-color: #AED3FF;
+    align-content: center;
+    margin: 30px;
+    border: solid #000000 2px;
+    border-radius: 10px;
 }
 
-.work {
-    display: flex;
-    flex-wrap: nowrap;
-    background: none;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #a6c5ff;
-}
-
-.work img {
-    margin: 10px 25px;
-    width: 400px;
-    height: 250px;
-    float: left;
-    border-radius: 30px;
-}
-
-
-.work h2, .work p {
+.work-card-expanded h2, .work-card-expanded p {
     color: #000000;
-    margin-right: 25px;
-}
-
-/*Casestudy styling*/
-.process img {
-    width: 650px;
-    height: auto;
-    border: 2px solid #000000;
+    text-decoration: none;
     margin: 5px;
 }
 
-.process img.vertical {
-    width: 220px;
-    height: auto;
+.expanded1 img {
+    height: 250px;
+}
+
+.expanded2 img {
+    height: 250px;
+}
+
+/*Contact Page Styling*/
+.contact-card {
+    justify-self: center;
+    background-color: #AED3FF;
+    width: 750px;
+    text-align: center;
+    border-radius: 15px;
+    border: solid #000000 2px;
+}
+
+.contact-card ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-card ul li {
+    display: inline;
+}
+
+.contact-card ul img {
+    height: 100px;
+    width: 100px;
+}
+
+.contact-card h1 {
+    font-weight: 400;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+/*Brief Page Styling*/
+h1, h2, h3, p, li {
+    color: #FFFFFF;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.task, .requirements {
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.task p, .requirements p {
+    margin: 0 auto;
+}
+
+.requirements ul {
+    list-style: circle;
+    padding: 0;
+}
+
+
+.row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 20px 0;
+    border-bottom: 5px solid #AED3FF;
+}
+
+.process {
+    border-top: 5px solid #AED3FF;
+}
+
+.text-left {
+    order: -1;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.text-right {
+    order: 1;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.brief-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-left ul, .text-left h3 {
+    list-style: circle;
+    padding: 0;
+    text-align: left;
+}
+
+figcaption {
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+}
+
+.research {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.process img, .define img, .wireframes img, .userTesting img, .photography img, .mockups img, .testing img {
     border: 2px solid #000000;
+    box-shadow: 7px 8px 15px 1px rgba(0,0,0,0.55);
+    margin: 10px;
 }
 
-.work a {
-    text-decoration: none;
+.candleMindmap {
+    height: 400px;
 }
 
-.contact a {
-    text-decoration: none;
-    color: #000000;
+.candleWireframe {
+    height: 350px;
 }
 
-.contact {
+.msgWireframe {
+    width: 600px;
+}
+
+.personaimg {
+    height: 475px;
+}
+
+.candlePhoto {
+    height: 500px;
+}
+
+.candleUserTestResults {
+    width: 900px;
+}
+
+.candleMockup {
     height: 600px;
 }
 
-/*Footer Code*/
-footer {
-    display: flex;
-    height: 100px;
-    background-color: #C4C4C4;
-    justify-content: space-between;
-    align-items: center;
-    
+.candleStyleGuide {
+    width: 550px;
 }
 
-footer p {
-    color: #000000;
-    font-size: 20px;
-    line-height: 100px;
-    margin-left: 20px;
+.codeSnippet {
+    width: 650px;
 }
 
-footer img {
-    height: 60px;
-    width: 60px;
+.msgDesktopMock {
+    width: 650px;
 }
 
-footer .icon {
-    margin-right: 20px;
+.msgMobileMock {
+    width: 250px;
 }
 
-.icon img {
-    padding: 10px;
+.testing .mobileMsgs {
+    height: 500px;
+    border: none;
+    box-shadow: none;
 }
 
-@media screen and (max-width: 975px) {
-    
+.solution {
+    display: inline;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.solutionImg {
+    height: 450px;
+}
+
+.solutionImg1 {
+    height: 400px;
+}
+
+.solutionImg2 {
+    width: 550px;
+}
+
+/*Mobile/Tablet Media Query (Active only on 650px or below screen widths*/
+@media (max-width: 1350px) {
+/*Mobile/Tablet Styling*/
+    .grid-container {
+        margin: 0 15px;
+        margin-top: 110px;
+    }
+
     .header {
-        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+    }
+
+    .header h1 {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .me-img {
         height: 150px;
-        width: 100%;
-        justify-content: center;
-    }
-    .header nav {
-        padding: 0 15px;
-    }
-    .header nav li {
-        padding: 0;
+        width: 150px 
     }
 
-    .workCard1, .workCard2, .workCard3 {
-        width: 275px;
-        height: 180px;
+    /*Nav*/
+    .hamburger {
+        display: block;
     }
 
-    .work {
+    /*Animation for making the hamburger menu an X when active*/
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0;
         flex-direction: column;
-        flex-wrap: wrap;
+        background-color: #FF8000;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
 
-    .work img {
-        margin: 10px 5px;
-        width: 200px;
-        height: 125px;
-        border-radius: 30px;
+    .nav-menu li {
+        margin: 16px 0;
     }
 
-    /*Casestudy styling*/
-    .process img {
-        width: 250px;
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .body.stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /*Work Cards*/
+    .work-card {
+        height: 275px;
+        width: 275px;
+    }
+
+    .overlay {
+        height: 275px;
+        width: 275px;
+    }
+
+    .card1 img {
+        height: 200px;
+    }
+
+    .card2 img {
+        height: 190px;
+    }
+
+    .work-card-expanded {
+        width: 275px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .work-card-expanded h2 p {
+        margin: 5px 5px;
+    }
+
+    .expanded1 img {
+        height: 200px;
+    }
+
+    .expanded2 img {
+        height: 175px;
+    }
+
+    /*Footer Styling*/
+    .icons {
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .icons img {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+
+    /*Contact Card*/
+    .contact-card {
+        width: 300px;
+        margin-bottom: 100px;
+    }
+
+    .contact-card h1 {
+        color: #000000;
+    }
+
+    .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12 {
+        display: inline-block;
+        text-align: center;
+        max-width: 100vw;
+    }
+
+    .text-left, .text-right, .img-left, .img-right {
+        float: none;
+        max-width: 100%;
+    }
+
+    .brief-img {
+        flex-direction: column;
+    }
+
+    .personaimg {
+        height: 355px;
+    }
+
+    .candleWireframe {
+        height: 400px;
+    }
+
+    .msgWireframe {
+        width: 500px;
+    }
+
+    .candleMindmap {
+        width: 300px;
         height: auto;
-        border: 2px solid #000000;
+    }
+    
+    .candleUserTestResults {
+        width: 450px;
+    }
+
+    .candlePhoto {
+        height: 350px;
+    }
+    
+    .candleMockup {
+        height: 500px;
+    }
+
+    .candleStyleGuide {
+        width: 500px;
+    }
+
+    .codeSnippet {
+        width: 450px;
+    }
+
+    .msgDesktopMock {
+        width: 600px;
+    }
+    
+    .msgMobileMock {
+        width: 225px;
+    }
+
+    .testing .mobileMsgs {
+        height: 450px;
+    }
+
+    .solutionImg2 {
+        width: 350px;
+    }
+
+    .msgProcess {
+        width: 350px;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .work img {
-        display: none;
+@media (max-width: 650px) {
+
+    .candleWireframe {
+        height: auto;
+        width: 300px;
     }
 
-    .work h2 {
-        font-size: 15px;
-        text-align: center;
+    .msgWireframe {
+        width: 350px;
     }
 
-    .work p {
-        font-size: 12px;
-        text-align: center;
+    .candleUserTestResults {
+        width: 300px;
     }
+
+    .candleStyleGuide {
+        width: 300px;
+    }
+
+    .personaimg {
+        height: 210px;
+    }
+
+    .codeSnippet {
+        width: 300px;
+    }
+
+    .msgDesktopMock {
+        width: 300px;
+    }
+
+    .testing .mobileMsgs {
+        height: 300px;
+    }
+    
 }
-
