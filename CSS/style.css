@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #373737;
+    background-color: #FFFFFF;
     font-family: 'Roboto Slab', serif;
     max-width: 100%;
 }
@@ -64,7 +64,7 @@ h1, h2, h3 {
 }
 
 .header a:hover {
-    background-color: #59AFFF;
+    background-color: #3892FF;
     border-radius: 5px;
 } 
 
@@ -91,12 +91,20 @@ h1, h2, h3 {
 }
 
 .page-title{
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 400;
     text-align: center;
 }
 
 .me-img {
+    width: 250px;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.31);
+}
+
+.memoji-img {
     height: 300px;
     width: 300px;
     border-radius: 120px;
@@ -110,9 +118,10 @@ h1, h2, h3 {
     width: 450px;
     height: 450px;
     margin: 10px auto;
-    background-color: #AED3FF;
+    background-color: #3892FF;
     border: 2px solid #000000;
     border-radius: 10px;
+    box-shadow: 8px 8px 8px 4px rgba(0,0,0,0.25);
 }
 
 .work-card a {
@@ -132,8 +141,12 @@ h1, h2, h3 {
     display: none;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
     font-size: 22px;
+    text-align: center;
+}
+
+.overlay p {
+    color: #FFFFFF;
 }
 
 .work-card:hover .overlay {
@@ -147,6 +160,11 @@ h1, h2, h3 {
 }
 
 .card2 img {
+    height: 300px;
+}
+
+.card3 model-viewer {
+    width: 375px;
     height: 300px;
 }
 
@@ -180,7 +198,7 @@ h1, h2, h3 {
 /*Projects Page Specific Styling*/
 .page-header {
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .page-header p {
@@ -195,12 +213,13 @@ h1, h2, h3 {
 
 .work-card-expanded {
     width: 1200px;
-    height: 550px;
-    background-color: #AED3FF;
+    height: 450px;
+    background-color: #3892FF;
     align-content: center;
     margin: 30px;
     border: solid #000000 2px;
     border-radius: 10px;
+    box-shadow: 8px 8px 8px 4px rgba(0,0,0,0.25);
 }
 
 .work-card-expanded h2, .work-card-expanded p {
@@ -215,6 +234,13 @@ h1, h2, h3 {
 
 .expanded2 img {
     height: 250px;
+}
+
+.expanded3 model-viewer {
+    grid-area: img1;
+    width: 300px;
+    height: 250px;
+    padding: 0 20px;
 }
 
 /*Contact Page Styling*/
@@ -250,7 +276,7 @@ h1, h2, h3 {
 
 /*Brief Page Styling*/
 h1, h2, h3, p, li {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .project-title {
@@ -278,17 +304,21 @@ h1, h2, h3, p, li {
     align-items: center;
     margin: 25px 0;
     padding: 20px 0;
-    border-bottom: 5px solid #AED3FF;
+    border-bottom: 5px solid #FF8000;
 }
 
 .process {
-    border-top: 5px solid #AED3FF;
+    border-top: 5px solid #FF8000;
 }
 
 .text-left {
     order: -1;
     max-width: 50%;
     padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-right {
@@ -310,7 +340,7 @@ h1, h2, h3, p, li {
 }
 
 figcaption {
-    color: #ffffff;
+    color: #000000;
     margin: 5px;
     text-align: center;
 }
@@ -374,6 +404,18 @@ figure {
     width: 250px;
 }
 
+.f1DesktopMock {
+    width: 725px;
+}
+
+.f1MobileMock {
+    width: 250px;
+}
+
+.f1NavMock {
+    width: 600px;
+}
+
 .testing .mobileMsgs {
     height: 500px;
     border: none;
@@ -399,6 +441,19 @@ figure {
     width: 550px;
 }
 
+.mobileSolution {
+    width: 200px;
+}
+
+.desktopSolution {
+    width: 800px;
+    padding: 30px;
+}
+
+.model-hidden {
+    display: none;
+}
+
 /*Mobile/Tablet Media Query (Active only on 650px or below screen widths*/
 @media (max-width: 1350px) {
 /*Mobile/Tablet Styling*/
@@ -420,12 +475,22 @@ figure {
     }
 
     .me-img {
+        width: 160px;
+        border-radius: 30px;
+        justify-self: center;
+        align-self: center;
+        box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.31);
+    }
+    
+
+    .memoji-img {
         height: 150px;
         width: 150px 
     }
 
     /*Nav*/
     .hamburger {
+        z-index: 10;
         display: block;
     }
 
@@ -457,8 +522,14 @@ figure {
         margin: 16px 0;
     }
 
-    .nav-menu.active{
+    .nav-menu.active {
+        position: fixed;
+        z-index: 10;
         left: 0;
+    }
+
+    .model-hidden {
+        display: none;
     }
 
     .body.stop-scrolling {
@@ -485,6 +556,11 @@ figure {
         height: 190px;
     }
 
+    .card3 model-viewer {
+        width: 230px;
+        height: 230px;
+    }
+
     .work-card-expanded {
         width: 275px;
         margin: 10px;
@@ -501,6 +577,10 @@ figure {
 
     .expanded2 img {
         height: 175px;
+    }
+
+    .expanded3 model-viewer {
+        width: 230px;
     }
 
     /*Footer Styling*/
@@ -590,6 +670,14 @@ figure {
         width: 225px;
     }
 
+    .f1DesktopMock {
+        width: 700px;
+    }
+
+    .f1MobileMock {
+        width: 275px;
+    }
+
     .testing .mobileMsgs {
         height: 450px;
     }
@@ -606,9 +694,31 @@ figure {
     .msgProcess {
         width: 350px;
     }
+
+    .f1DesktopMock {
+        width: 550px;
+    }
+
+    .blenderCar, .blenderTrack {
+        width: 500px;
+    }
+
+    .mobileSolution {
+        width: 150px;
+    }
+    
+    .desktopSolution {
+        width: 500px;
+        padding: 30px;
+    }
 }
 
 @media (max-width: 650px) {
+
+    .expanded3 model-viewer {
+        width: 230px;
+        height: 190px;
+    }
 
     .candleWireframe {
         height: auto;
@@ -646,4 +756,29 @@ figure {
     .solutionImg2 {
         width: 300px;
     }  
+
+    .f1DesktopMock {
+        width: 320px;
+    }
+
+    .f1MobileMock {
+        width: 150px;
+    }
+
+    .blenderCar, .blenderTrack {
+        width: 300px;
+    }
+
+    .desktopLighthouse, .mobileLighthouse {
+        width: 300px;
+    }
+
+    .mobileSolution {
+        width: 120px;
+    }
+    
+    .desktopSolution {
+        width: 300px;
+        padding: 20px;
+    }
 }

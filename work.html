@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/grid.css">
@@ -29,7 +30,6 @@
             </div>
         </nav>
     </header>
-    <script src="Javascript/hamburger.js"></script>
     <!--Main body content showing lastest 3 pieces of work-->
     <main class="grid-container">
         <article class="page-header">
@@ -37,17 +37,22 @@
             <p>Here is a list of all my completed projects, this will be updated as more work is completed, with new ones appearing at the top of the list! Please have a look and use the contact page if you wish to contact me about any of this work!</p>
         </article>
         <article class="work-cards">
-            <a class="work-card-expanded expanded1" href="brief1.html">
+            <a class="work-card-expanded expanded1" href="project1.html">
                     <img class="img1" src="Assets/Brief1Images/phone1-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
                     <img class="img2" src="Assets/Brief1Images/phone2-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
                     <h2>Inanimate Object Build</h2>
                     <p>This project focused on the design & development of a single page site for a static product in order to promote it.</p>
             </a>
-            <a class="work-card-expanded expanded2" href="brief2.html">
+            <a class="work-card-expanded expanded2" href="project2.html">
                 <img class="bespokeImg" src="Assets/Brief2Images/desktopMockup.png" alt="A tablet mockup showing a screenshot of the bespoke messaging app design">
                 <h2>Bespoke Messaging App Design</h2>
                 <p>This project focused on designing a bespoke messaging system that could be implemented acorss multiple styles of branding.</p>
-        </a>
+            </a>
+            <a class="work-card-expanded expanded3" href="project3.html">
+                <model-viewer class="model" src="Assets/FinalYearProject/3D Models/f1car.glb" environment-image="neutral" exposure="1" auto-rotate camera-orbit="320deg 65deg 8m"></model-viewer>
+                <h2>Final Year Project - F1 Website Redesign</h2>
+                <p>This project focused on designing a bespoke messaging system that could be implemented acorss multiple styles of branding.</p>
+            </a>
         </article>
     </main>
     <!--Footer containing links to 2 social media sites and a copyright notice-->
@@ -58,5 +63,6 @@
         </div>
         <p>&copy;David Molloy</p>
     </footer>
+    <script src="Javascript/hamburger.js"></script>
 </body>
 </html>

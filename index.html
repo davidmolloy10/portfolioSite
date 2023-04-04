@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/grid.css">
@@ -29,14 +30,13 @@
             </div>
         </nav>
     </header>
-    <script src="Javascript/hamburger.js"></script>
     <!--Main body content showing lastest 3 pieces of work-->
     <main class="grid-container">
         <h1 class="page-title">Hi, I’m David, a web design & development graduate pursuing a career in UX/UI design to improve the user experience for all. Please take a look at the work, here on my site to learn a bit more about how I approach a UX project.</h1>
-        <img class="me-img" src="Assets/memeojiFigure.PNG" alt="A memoji figure based on my appearance">
+        <img class="me-img" src="Assets/me.jpeg" alt="An image of me smiling into the camera">
         
         <div class="work-card card1">
-            <a href="brief1.html">
+            <a href="project1.html">
                     <img src="Assets/Brief1Images/phone1-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
                     <img src="Assets/Brief1Images/phone2-screenshot.png" alt="A phone mockup showing a screenshot from the inanimate object project">
                     <div class="overlay">
@@ -45,8 +45,16 @@
             </a>
         </div>
         <div class="work-card card2">
-            <a href="brief2.html">
+            <a href="project2.html">
                 <img src="Assets/Brief2Images/desktopMockup.png" alt="A tablet mockup showing a screenshot of the bespoke messaging app design">
+                <div class="overlay">
+                    <p>Click here to find out more!</p>
+                </div>
+            </a>
+        </div>
+        <div class="work-card card3">
+            <a href="project3.html">
+                <model-viewer class="model" src="Assets/FinalYearProject/3D Models/f1car.glb" environment-image="neutral" exposure="1" auto-rotate camera-orbit="320deg 65deg 8m"></model-viewer>
                 <div class="overlay">
                     <p>Click here to find out more!</p>
                 </div>
@@ -61,5 +69,6 @@
         </div>
         <p>&copy;David Molloy</p>
     </footer>
+    <script src="Javascript/hamburger.js"></script>
 </body>
 </html>

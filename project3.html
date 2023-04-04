@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
+    <title>David Molloy | Final Year Project - F1 Website Redesign</title>
+</head>
+<body class="body">
+    <!--Header Section with the 3 elements-->
+    <header class="header">
+        <h1>David Molloy</h1>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="Javascript/hamburger.js"></script>
+    <!--Main body content showing latest 3 pieces of work-->
+    <main class="grid-container">
+        <h1 class="project-title">Final Year Project - F1 Website Redesign</h1>
+        <article class="task">
+            <h2>The Task</h2>
+            <p>The main aim for this project, was to redesign and develop a site with the acknowledgement that todays web is becoming very boring and similar across all websites. Doing this it was important to keep the overall usability and user experience in mind as in the end it had to make sense to actually use. The main focus I undertook was to include the use of 3D models to increase user engagement.</p>
+        </article>
+        <article class="requirements">
+            <h2>The Requirements</h2>
+            <p>Below is a set of objectifiable requirements for the project, compiled from user research through a questionnaire, focusing on pain points on the current site and from the project brief. Requirements were also gathered from the brief  </p>
+            <ul>
+                <li>Develop the prototype site so that it has good performance and accessibility</li>
+                <li>The proposed solution must be responsive</li>
+                <li>Make the "round" card less bland and boring</li>
+                <li>Clearly show inform the user through the UI if a race has been completed or not</li>
+                <li>Introduce 3D models to add more visual stimulation and increase interactivity</li>
+                <li>Improve the standings page</li>
+            </ul>
+        </article>
+        <article class="row3 process">
+            <div class="text-left">
+                <h2>The Process</h2>
+                <br>
+                <p>This project followed an agile method through one sprint using the "double diamond" process from the British Design Council, throughout. The first stage involved discovering and gaining insight into the problem, this was obtained through the project brief and the user questionnaire</p>
+                <p>The define stage is about understanding how the user needs and the problem align and this was used to finalize the list of requirements.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgProcess" src="Assets/FinalYearProject/processDiagram.png" alt="A diagram showing the 6 stages in the project process">
+                    <figcaption>The process steps followed during this project</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row4 define">
+            <div class="text-center">
+                <h2>Discover and Define</h2>
+                <p>The discover phase consisted of a user survey and some analysis of the current F1 website design. The questionnaire was designed with the sole purpose of finding out problems that users currently have with the website, some of this was focused on the design and implementation of the "Round" cards used to showcase each race in the season, with this 9/10 users asked rated it 3/5 or below when asked about their opinion on the current design. This indicated that it for the users it is quite a problem and could be improved, with this I looked into this area on the current website, with the brief requirements in mind, with it being pretty simple, having the dates, country, name and either 2D track map or the podium finishers if the race had been completed.</p>
+
+                <p>The define stage allowed piece together user needs and pain points with the problem that this project set out to solve, take the round card for example, the user clearly has problems wit the current design so it would be reasonable to decide that this is an area that could be made less "boring" with some interactive 3D elements and better design.
+                </p>
+            </div>
+            <div class="brief-img">
+                
+            </div>
+        </article>
+        <article class="row5 wireframes">
+            <div class="text-left">
+                <h2>Wireframing</h2>
+                <p>To begin my design process, I sketched some redesigns for the "round" card that had been identified from the research to be a problem. I initially began with trying to tidy and clean the original design for my first iteration, making use of some of the whitespace left in the design to move elements around to create space else where. Moving through some more iterations I came to my final one, which has taken more of a complete overhaul of the current design, whilst keeping its original feel and DNA. I moved the podium finishers (or if the race is yet to take place implemented a 3D model of the track map) to the right and stacked them, this makes it easier to quickly tell the finishing order. Moving this to the side allowed me to add some new information to the card such as the fastest lap and fastest pitstop, which were previously hidden within the round page. These changes were able to make use of some of the wasted space to include new data, but without making it feel cramped or overwhelming the user, with too much information or change from the original design.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="msgWireframe" src="Assets/FinalYearProject/Round Card v1.jpg" alt="A sketch of the round card design, showing the round number, podium finishers, country held etc">
+                    <figcaption>The first iteration wireframe for the round card redesign</figcaption>
+                    <img class="msgWireframe" src="Assets/FinalYearProject/Round Card v3.jpg" alt="A second sketch of the round card design with the podium finishers moved from the bottom to the right and new information such as fastest lap and fastest pitstop added">
+                    <figcaption>The third and final iteration wireframe for the round card redesign</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row6 mockups">
+            <div class="text-right">
+                <h2>High Fidelity Mock-ups</h2>
+                <p>Using the wireframes produced, the next step was to make high-fidelity mockups of these in Figma, allowing me to get more of the details implemented into the design, such as specific sizes and colours of elements. Whilst producing these, I made a style guide to go along with it, ensuring that the same colours, sizes and fonts were used across the project, as well as making future work easier. </p>
+                <p>Part of my high-fidelity prototyping also included prototyping a change to the navbar, where the current design uses static images to show each team, I would implement 3D models of each car into this area.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="f1DesktopMock" src="Assets/FinalYearProject/Desktop - Schedule.jpg" alt="Screenshot of the scheudule page mockup, showing a three rows of four round cards spaced equally">
+                    <figcaption>Final Desktop High-Fidelity Mock-up</figcaption>
+                </figure>
+                <figure>
+                    <img class="f1MobileMock" src="Assets/FinalYearProject/Mobile - Schedule.jpg" alt="Screenshot of the mobile schedule page, showing round cards stacked on top of each other">
+                    <figcaption>Schedule Page Mobile Design</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row7 testing">
+            <div class="text-left">
+                <h2>3D Modelling</h2>
+                <p>For this project, I knew I wanted to produce 3D models for the cars and the tracks where possible, I knew that at least to begin with these would be relatively low poly and quality as this was just for the proof of concept to show the idea could work. As my 3D modelling skills were fairly limited at the beginning of this, I followed some tutorials to grasp the basics of Blender, and a tutorial was loosely used to produce the car model. Following this tutorial I was able to produce a 3D model of an F1 car based on the 2022 regulations and I could save multiple versions of this car with different colours applied for the 10 different teams.</p>
+                <p>To model the tacks, I used a the current flat images to get the layout and used cuboids to model along the road surface. I made sure to colour each sector differently to show these clearly and also included some text to show what these sectors were for new users.</p>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="blenderCar" src="Assets/FinalYearProject/blenderCar.png" alt="A screenshot from inside blender showing the final model of one of the F1 cars">
+                    <figcaption>A screenshot from in blender showing the final car model produced</figcaption>
+            
+                    <img class="blenderTrack" src="Assets/FinalYearProject/blenderTrack.png" alt="A screenshot from in blender showing the model for the Monza race track">
+                    <figcaption>A screenshot from in blender showing the model for the Monza race track</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row8 solution">
+                <h2>Implementation</h2>
+                <p>The original plan to implement the 3D models was to use Three.js, which finds its main use case in implementing 3D scenes into the browser. However after some testing with this, I came across some issues with implementing multiple canvas' which I believed was the best way to implement the 3D models. Having these issues, I discovered the "<model-viewer>" library component, which is an open-source project, led by Google. This allowed me to achieve the simple implementation I was looking for as it applied straight onto vanilla HTML/CSS and could effectively be placed anywhere on the page multiple times without interfering with each other.</p>    
+        </article>
+        <article class="row9 testing">
+            <div class="text-left">
+                <h2>Testing</h2>
+                <p>The first stage in testing was to use Google lighthouse to monitor performance and accessibility as it was a concern that implementing a variety of models on one page could cause issues with these areas. On desktop I found that the performance and accessibility were still almost perfect, on mobile the performance dropped but not substantially.</p>
+                <p>I also did some user testing where I asked five users to use the website and provide comparative feedback to the current live design. Five users were selected as this is what the Nielsen Norman Group suggests is the ideal number because as you increase the users past this amount, the amount of issues they find doesn't grow as much. Most of the feedback received, suggested that overall the design changes had made a positive difference, notably, the design of the round card had improved substantially and the extra information was welcomed by all, however, a majority of the users still rated the overall design for the schedule page the same as before. All 5 users also liked the implementation of the 3D models, however, noted they were a bit too small and plain in their current design.</p>
+                <h3>Below is a list of some of the key issues the testing revealed and what would be worked on during the next sprit of this design process.</h3>
+                <ul>
+                    <li>Team dropdown 3D models being too small</li>
+                    <li>The schedule page overall design being improved</li>
+                    <li>Improvement to the loading on older/slower devices and mobiles</li>
+                    <li>Improved design of 3D models</li>
+                </ul>
+            </div>
+            <div class="brief-img">
+                <figure>
+                    <img class="desktopLighthouse" src="Assets/FinalYearProject/desktopLighthouse.png" alt="A screenshot of the google lighthouse test report results for the desktop website">
+                    <figcaption>Lighthouse report for the desktop version of the website</figcaption>
+                </figure>
+                <figure>
+                    <img class="mobileLighthouse" src="Assets/FinalYearProject/mobileLighthouse.png" alt="A screenshot of the google lighthouse test report results for the mobile website">
+                    <figcaption>Lighthouse report for the mobile version of the website</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="row10 solution">
+            <h2>The Solution</h2>
+            <p>The aim of this project was to design and develop a useable site with 3D models implemented, that can showcase what could be done when you challenge conventional standards aren't followed. Looking back to the requirements, I could argue this project has been successful in showing the proof of concept works, unfortunately I was unable to meet every requirement, running out of time to properly tackle the standings page, past initial ideas and the performance on mobile while not substantially worse than desktop, it was still worse. However the rest of the requirements and the aim was met, defining this project as black and white success or failure at this point isn't possible in my opinion, but it cannot be argued the potential for success is definitely there.</p>
+            <div class="brief-img">
+                <img class="mobileSolution" src="Assets/FinalYearProject/Mobile - Schedule.png" alt="A desktop model showing the schedule page on a laptop">
+                <img class="desktopSolution" src="Assets/FinalYearProject/macMockup.png" alt="A phone model showing the screenshot of the mockup on it">
+            </div>
+        </article>
+    </main>
+    <!--Footer containing links to 2 social media sites and a copyright notice-->
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/davidmolloy10_"><img src="Assets/twitter.png" alt="Twitter Icon which links to my twitter profile"></a>
+            <a href="https://www.linkedin.com/in/david-molloy-1b1a49194/"><img src="Assets/linkedin.png" alt="LinkedIn Icon which links to my linkedin profile"></a>   
+        </div>
+        <p>&copy;David Molloy</p>
+    </footer>
+</body>
+</html>
