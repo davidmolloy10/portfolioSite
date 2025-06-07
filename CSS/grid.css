@@ -5,17 +5,17 @@
 }
 
 .page-title {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 2;
 }
 
 .me-img {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 1;
 }
 
 .card1 {
-    grid-column: 5/7;
+    grid-column: 5/8;
     grid-row: 1;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .card3 {
-    grid-column: 5/7;
+    grid-column: 5/8;
     grid-row: 2;
 }
 
